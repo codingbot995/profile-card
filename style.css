@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* ✅ allows content to move to new line */
+  gap: 1rem;
+  align-items: flex-start;
+  background: #34e331;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+ /* border-radius: 50%;*/
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+

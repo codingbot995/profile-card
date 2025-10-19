@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Jane Waguthi</h2>
+        <figure>
+        <img
+          src="pic1.png"
+          alt="Avatar of Jane Waguthi"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+      <p data-testid="test-user-bio">
+        Full-stack developer passionate about design, innovation, and accessibility.
+      </p>
+      <p data-testid="test-user-time" id="currentTime"></p>
+       <nav data-testid="test-user-social-links" aria-label="Social Links">
+        <ul>
+          <li>
+            <a
+              href="https://x.com/JWaguthi53843"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/codingbot995"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    
+      <section aria-labelledby="hobbies-heading">
+        <h3 id="hobbies-heading">Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Playing music</li>
+          <li>Graphic design</li>
+          <li>Traveling</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="dislikes-heading">
+        <h3 id="dislikes-heading">Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Noise</li>
+          <li>Slow internet</li>
+          <li>Clutter</li>
+        </ul>
+      </section>
+      </header>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
