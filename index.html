@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <article data-testid="test-profile-card" class="profile-card">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+     
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+     <article data-testid="test-profile-card" class="profile-card">
+      <div>
       <header>
         <h2 data-testid="test-user-name">Jane Waguthi</h2>
+        </header>
         <figure>
         <img
           src="pic1.png"
@@ -70,9 +84,11 @@
           <li>Clutter</li>
         </ul>
       </section>
-      </header>
+      </div>
+      
     </article>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>

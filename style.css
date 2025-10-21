@@ -1,29 +1,138 @@
 body {
   margin: 0;
-  padding: 2rem;
   font-family: system-ui, sans-serif;
-  background: #f4f6f8;
+  background: #f5f7fa;
   color: #333;
+  padding-top: 70px;
 }
 
-.profile-card {
+/* 🌐 NAVBAR */
+.navbar {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* ✅ allows content to move to new line */
+  justify-content: center;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
   gap: 1rem;
-  align-items: flex-start;
-  background: #34e331;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  max-width: 600px;
-  margin: 0 auto;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* 📇 Profile Card */
+.profile-card {
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profile-card figure {
+  flex: 1 1 150px;
 }
 
 .profile-card img {
-  width: 120px;
-  height: 120px;
- /* border-radius: 50%;*/
-  object-fit: cover;
+  width: 250px;
+  height:300px;
+
+}
+
+.profile-card section {
+  flex: 2 1 300px;
+}
+
+.about{
+  padding: 2rem;
+  margin:  auto;
+}
+/* ✉️ Contact Page */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
 
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  height: 1em;
+}
+
+.success {
+  margin-top: 1rem;
+  color: #28a745;
+  text-align: center;
+}
+
+/* 📱 Responsive */
+@media (max-width: 700px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
